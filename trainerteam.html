@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/3.5.2/css/framework7.min.css"> -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/trainerteam.css">
+    <title>my_team!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="lcircle"></div>
+        <div class="mcircle"></div>
+        <div class="scircle"></div>
+        <div class="lcircle1"></div>
+        <div class="mcircle1"></div>
+        <div class="scircle1"></div>
+
+        <!--===================== SIDE NAVBAR SECTION =====================-->
+        <div class="navbar">
+
+            <div class="menulink">
+                <div class="logo">
+                    <img src="images/logos/edm03.png" alt="">
+                </div>
+
+                <ul class="up">
+                    <li><a href="trainerteam.html"> <img src="images/homeImg/dashbordSvg/home.svg" alt=""> <span class="navtex">
+                                Team</span></a>
+                    </li>
+                    <li><a href="trainerprofile.html"> <img src="images/homeImg/dashbordSvg/profile.svg" alt=""> <span
+                                class="navtex">
+                                Profile</span></a></li>
+                    <li><a href="traineractivity.html"> <img src="images/homeImg/dashbordSvg/Iconactivty.svg" alt=""> <span
+                                class="navtex">Activity</span></a></li>
+                    <li><a href="history.html"> <img src="images/homeImg/dashbordSvg/history.svg" alt=""> <span class="navtex">
+                                History</span></a></li>
+
+                </ul>
+                <ul class="down">
+                    <li><a href="trainersettings.html"><img src="images/homeImg/dashbordSvg/settings.svg" alt=""> <span
+                                class="navtex">
+                                Settings</span></a></li>
+                    <li><a href="index.html"> <img src="images/homeImg/dashbordSvg/logout.svg" alt=""> <span class="navtex"> Log
+                                out</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--========================= TOPNAV =========================-->
+        <div class="myteam">
+            <div class="topnav">
+                <button class="sinput"><img src="images/homeImg/lens.png" alt=""></button>
+                <input class="input" type="search" placeholder="search">
+
+                <div class="pimg">
+                    <img src="images/homeImg/Ellipse011.png" alt="">
+                </div>
+                <h3>Tech4dev</h3>
+            </div>
+            <!--=================== BODY FILED ===================-->
+            <div class="field">
+                <div class="member">
+                    <h3>Team Members(5) <span class="add"><img src="images/homeImg/Vector(1).png" alt=""></span><span
+                            class="del"><img src="images/homeImg/Vector.png" alt=""></span></h3>
+                    <div class="textimg">
+                        <span class="ellipse1"><img src="images/homeImg/Ellipse011.png" alt=""></span> <span
+                            class="crown"><img src="images/homeImg/vector2).png" alt=""></span>
+                        <p> Diwura <span class="space"> Team lead </span></p>
+                    </div>
+                    <div class="textimg">
+                        <span class="ellipse"><img src="images/homeImg/Ellipse011.png" alt=""></span>
+                        <div class="pro">
+                            <p class="name">Joshua</p>
+                            <p>Programs <br> Cordinator 1</p>
+                        </div>
+                    </div>
+                    <div class="textimg">
+                        <span class="ellipse"><img src="images/homeImg/Ellipse011.png" alt=""></span>
+                        <div class="pro">
+                            <p class="namej">Blessing</p>
+                            <p>Programs <br> Cordinator 2</p>
+                        </div>
+                    </div>
+                    <div class="textimg">
+                        <span class="ellipse"><img src="images/homeImg/Ellipse011.png" alt=""></span>
+                        <p> Solumbi <span class="spaces"> Welfare </span></p>
+                    </div>
+
+                    <div class="inputfield">
+                        <form action="">
+                            <input type="text" name="" placeholder="Member">
+                            <input type="text" name="" placeholder="Role">
+                        </form>
+                    </div>
+                </div>
+                <div class="calrem">
+                    <div class="cal">
+                        <h3>Calender</h3>
+                        <span>
+                            <button class="week">Weeks</button>
+                            <button class="month">Months</button>
+                            <button class="year">Years</button>
+                        </span>
+                        <img src="images/homeImg/calendar.png" alt="">
+                     </div>
+                    <div class="rem">
+                        <h3>Reminder <span class="bell"><img src="images/homeImg/redbel.png" alt=""></span> <span
+                                class="belhead"><img src="images/homeImg/bellhead.png" alt=""></span></h3>
+                        <p><span class="img"><img src="images/homeImg/calnote.png" alt=""></span>Trainees to submit
+                            project <span class="date">25th September</span></p>
+                        <p class="p"><span class="post">Project cordinator 1</span> <span class="time">12:00pm</span>
+                        </p>
+                        <p><span class="img"><img src="images/homeImg/calnote.png" alt=""></span>Demo day 2020 <span
+                                class="date1">30th September</span></p>
+                        <p class="p"><span class="post">Project cordinator 1</span> <span class="time">12:00pm</span>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    
+    <script>
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('a');
+        const menuLength = menuItem.length;
+        for (let i = 0; i< menuLength; i++){
+            if(menuItem[i].href === currentLocation){
+                menuItem[i].className = "active"
+            }
+        }
+
+        let btn = document.querySelector('.add');
+        let content = document.querySelector('.inputfield');
+        btn.addEventListener('click', showContent);
+
+        function showContent(){
+            if (content.style.display == "none") {
+                content.style.display = "block"
+            }else {
+                content.style.display = "none"
+            }
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

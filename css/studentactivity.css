@@ -1,0 +1,530 @@
+/* DEFAULT STYLING */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: edmerge;
+}
+button {
+    cursor: pointer;
+    border-radius: 12px;
+}
+input {
+    outline: none;
+    /* border-color: inherit; */
+}
+@font-face {
+    font-family: edmerge;
+    src: url('../montserrat/Montserrat-Regular.ttf');
+}
+.content {
+    padding-top: 35px;
+    margin-left: 10px;
+    border: solid pink;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    /* border: solid red; */
+}
+
+/* NAVBAR STYLING */
+.lcircle {
+    width: 550px;
+    height: 550px;
+    left: -181px;
+    top: 166.84px;
+    border-radius: 50%;
+    position: absolute;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.mcircle {
+    position: absolute;
+    width: 99px;
+    height: 98px;
+    left: 294.55px;
+    top: 455.53px;
+    border-radius: 50%;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.scircle {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    left: 404.64px;
+    top: 483.55px;
+    border-radius: 50%;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    z-index: 2;
+}
+.lcircle1 {
+    clip-path: circle(50% at 100% 73%);
+    position: absolute;
+    width: 459px;
+    height: 455px;
+    right: 0%;
+    /* left: 814.02px; */
+    top: 700.56px;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    z-index: -1;
+    opacity: 0.5;
+}
+.mcircle1 {
+    position: absolute;
+    width: 99px;
+    height: 98px;
+    left: 1000.22px;
+    top: 962.68px;
+    border-radius: 50%;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+
+}
+.scircle1 {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    left: 950.43px;
+    top: 984.82px;
+    border-radius: 50%;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.navbar {
+    width: 26.8%;
+    /* width: 250px; */
+    height: 1000px;
+    /* border: solid yellow; */
+}
+.menulink {
+    width: 216px;
+    height: 100vh;
+    background-color: #2b2d3c;
+    margin-left: 130px;
+    position: fixed;
+}
+.logo {
+    text-align: center;
+}
+.logo img {
+    margin-top: 10px;
+}
+.menulink .up {
+    margin-top: 30px;
+    margin-bottom: 180px;
+}
+.menulink ul li {
+    text-align: right;
+    list-style: none;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menulink ul li:hover {
+    background: #E6E8FA;
+    color: black;
+}
+.menulink ul li .active {
+    background: #E6E8FA;
+    color: black;
+    padding: 25px 55px 20px 55px;
+}
+.menulink ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menulink ul li a:hover {
+    background: #E6E8FA;
+    color: black;
+}
+.up img, .down img {
+    text-align: left;
+    margin-right: 20px;
+}
+
+/* BAR AND TRAINING DASHBOARD STYLING */
+.body{
+    width: 73.2%;
+    /* width: 910px; */
+    margin-left: 32px;
+}
+.Nbar{
+    width: 910px;
+    height: 159px;
+    background: rgba(43, 45, 60, 0.3);
+    /* margin-left: 346px; */
+    /* border: solid blue 3px; */
+}
+.trainingDash{
+    display: flex;
+    width: 73.2%;
+    margin: auto;
+    margin-top: 25px;
+    /* margin-top: 25px;
+    margin-left: 150px; */
+     
+    
+    /* border: solid; */
+    
+}
+
+.dash{
+    width: 335px;
+    height: 193px;
+    margin-right: 50px;
+    background-color: #E6E8FA;
+    ;
+}
+
+.dash1{
+    width: 335px;
+    height: 193px;
+ 
+    background: #E6E8FA;
+    /* margin-left: 20px; */
+}
+
+.bar{
+    display: flex;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.blackbar{
+    width: 146px;
+    height: 17px;
+    border: solid 1px;
+    background-color: #db4437;
+    border: none;
+}
+
+.dash h5{
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.dash p{
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 12.5px;
+}
+
+.whitebar{
+    width: 105px;
+    height: 17px;
+    
+    background-color: white;
+}
+
+.bar1{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.blackbar_1{
+    width: 251px;
+    height: 17px;
+   
+    background-color: #449926;
+    /* margin-left: 50px; */
+
+}
+.bar3{
+    width: 251px;
+    height: 17px;
+
+    /* background-color: black; */
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.dash1 h5{
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.dash1 p{
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 12.5px;
+}
+.big-img{
+    position: absolute;
+}
+.small-img{
+    position: absolute;
+    float: right;
+    margin-left: 700px;
+}
+.Nbar{
+    background-image: url('../images/s-img.png');
+    /* position: fixed; */
+}
+#faint{
+    width: auto;
+    height: 159px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.flex{
+    display: flex;
+    padding-top: 20px;
+}
+.searchbar{
+    height: 44px;
+    width: 340px;
+    position: relative;
+    right: -160px;
+    top: 60px;
+    border-radius: 10px;
+}
+.word{
+    margin-left: 750px;
+    margin-top: 15px;
+    color: white
+}
+#lcircle {
+    width: 750px;
+    height: 250px;
+   
+    border-radius: 100%;
+    position: relative;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    
+    z-index: 2px;
+    border: solid 1px;
+    
+}
+#Navtex{
+    width: 217px;
+    height: 60px;
+    background-color: white;
+    color: black;
+   
+
+}
+.navtexsep{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px){
+    .Nbar {
+        width: auto;
+    }
+    #faint {
+        position: relative;
+        width: auto;
+    }
+    .flex img {
+        margin-left: 470px;
+    }
+    .flex p {
+        display: none;
+    }
+    .searchbar {
+        left: 50px;
+    }
+    .container {
+        margin: 0px;
+        width: 100%;
+    }
+    .input {
+        margin-right: 0px;
+    }  .sinput {
+        margin-right: 150px;
+    }
+    
+    .pimg {
+        margin-right: 25px;
+    }
+    .lcircle, .lcircle1,
+    .mcircle, .mcircle1,
+    .scircle, .scircle1 {
+        display: none;
+    }
+    .menulink {
+        margin-left: 0px;
+    }
+    .body {
+        margin-left: 0px;
+    }
+}
+@media (max-width: 1000px){
+    .Nbar {
+        width: auto;
+    }
+    #faint {
+        position: relative;
+        width: auto;
+    }
+    .trainingDash {
+        display: block;
+    }
+    .dash1 {
+        margin-top: 20px;
+    }
+      .input {
+        margin-right: 0px;
+    }
+    .sinput {
+        margin-right: 50px;
+    }
+    .pimg {
+        margin-right: 5px;
+    }
+    .livetech {
+        display: block;
+    }
+    .techbox {
+        width: 250px;
+        margin: auto;
+    }
+    .seem {
+        margin-top: 15px;
+        text-align: center;
+    }
+    .contbio {
+        display: block;
+    }
+    .verify {
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+}
+@media (max-width: 720px){
+    .Nbar {
+        width: auto;
+    }
+    #faint {
+        position: relative;
+        width: auto;
+    }
+    .input {
+        width: 200px;
+        margin-right: 0px;
+    }
+    .sinput {
+        margin-right: 10px;
+    }
+    .menulink {
+        width: 100px;
+    }
+    .linkbtn {
+        width: 100px;
+    }
+    .navtex {
+        display: none;
+    }
+    .bio {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .bioimg {
+        margin: auto;
+        margin-top: 20px;
+    }
+    .bioedt {
+        margin: auto;
+        margin-right: 25px;
+    }
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+    .menulink ul li .active {
+        background: #E6E8FA;
+        color: black;
+        padding: 25px 30px 20px 30px;
+    
+    }
+    .trainingDash {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .dash1 {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .dash {
+        margin-bottom: 20px;
+    }
+    
+
+  
+}
+@media(max-width: 550px){
+    .trainingDash {
+        width: 100%;
+    }
+    .dash1, .dash {
+        width: 80%;
+        margin: auto;
+    }
+    .dash {
+        margin-bottom: 20px;
+    }
+    .bar{
+        width: 225px;
+    }
+    .bar3 .blackbar_1, .bar1 .blackbar_1{
+        width: 150px;
+    }
+    .blackbar {
+        width: 100px;
+    }
+    .whitebar {
+        width: 50px;
+    }
+    .searchbar {
+        width: 150px;
+        left: 20px;
+    }
+    .flex img {
+        margin-left: 190px;
+    }
+    .flex p {
+        display: none;
+    }
+    .Nbar {
+        width: 90%;
+        margin-left: 20px;
+    }
+    #faint {
+        position: relative;
+        width: auto;
+    }
+    .menulink {
+        height: auto;
+    }
+
+
+}

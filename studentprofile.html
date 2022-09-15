@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/studentprofile.css">
+    <title>profile student!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="lcircle"></div>
+        <div class="mcircle"></div>
+        <div class="scircle"></div>
+        <div class="lcircle1"></div>
+        <div class="mcircle1"></div>
+        <div class="scircle1"></div>
+
+        <!--===================== SIDE NAVBAR SECTION =====================-->
+        <div class="navbar">
+
+            <div class="menulink">
+                <div class="logo">
+                    <img src="images/logos/edm03.png" alt="">
+                </div>
+                <ul class="up">
+                    <li><a href="studentboard.html"> <img src="images/homeImg/dashbordSvg/home.svg" alt=""> <span class="navtex">
+                                Home</span></a>
+                    </li>
+                    <li><a href="studentprofile.html"> <img src="images/homeImg/dashbordSvg/profile.svg" alt=""> <span
+                                class="navtex">
+                                Profile</span></a></li>
+                    <li><a href="studentalert.html"> <img src="images/homeImg/dashbordSvg/alerticon.svg" alt=""> <span
+                                class="navtex">
+                                Alerts</span></a></li>
+                    <li><a href="studentactivity.html"> <img src="images/homeImg/dashbordSvg/Iconactivty.svg" alt=""> <span
+                                class="navtex">Activity</span></a></li>
+                </ul>
+                <ul class="down">
+                    <li><a href="settings.html"><img src="images/homeImg/dashbordSvg/settings.svg" alt=""> <span class="navtex">
+                                Settings</span></a></li>
+                    <li><a href="index.html"> <img src="images/homeImg/dashbordSvg/logout.svg" alt=""> <span class="navtex"> Log
+                                out</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--================= PROFILE SECTION BEGINGS HERE =================-->
+        <div class="profile">
+            <!-- biodata and verification -->
+           
+            <div class="banner">
+            <!-- <div class="bannercover"></div> -->
+            </div>
+            <div class="contbio">
+                <div class="bio">
+                    <div class="bioimg">
+                        <img src="images/homeImg/stproimg.png" alt="">
+                    </div>
+                    <div class="bioedt">
+                        <div class="spantext">
+                            <di class="h3">
+                                <h4>Chiamaka Ige</h4>
+                            </di>
+                            <div class="edtbtn">
+                                <a href="settings.html"><button>Edit profile</button></a>
+                            </div>
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder=" Youth ambassador, Public health enthusiat, Software Engineer"></textarea>
+                    </div>
+                </div>
+                <div class="verify">
+                    <h4>Verification <span> <a href=""><img class="img" src="images/homeImg/redpen.png" alt=""></a> </span></h4>
+                    <hr>
+                    <p><span><img class="img1" src="images/homeImg/verpro.png" alt=""></span>Identity Verification <span
+                            class="small"> <a href=""> Add</a></span></p>
+                    <p><span><img class="img1" src="images/homeImg/vercall.png" alt=""></span>Phone Verification <span
+                            class="small1"> <a href=""> Add</a></span></p>
+                    <p><span><img class="img1" src="images/homeImg/vermail.png" alt=""></span>Email Verification <span
+                            class="small2"> <a href="">verify</a></span></p>
+                    <p><span><img class="img1" src="images/homeImg/verloc.png" alt=""></span>Address <span
+                            class="small3"> <a href=""> Add</a></span></p>
+                </div>
+            </div>
+            <!-- EDUCATIONAL BACKGROUND SECTION -->
+            <div class="edu">
+                <div class="eduback">
+                    <h3>Educational background <span> <a href=""><img src="images/homeImg/redpen.png" alt=""></a></span></h3>
+                    <hr>
+                    <p>B.Sc Public Health Science</p>
+                    <p>Diploma Software Engineering</p>
+                </div>
+                <div class="skill">
+                    <h3>Skills <span> <a href=""><img src="images/homeImg/redpen.png" alt=""></a></span></h3>
+                    <hr>
+                    <button class="btn">Reading</button>
+                    <button class="btn_1">Writting</button>
+                    <button class="btn_2">Design</button>
+                </div>
+            </div>
+            <!-- EXPERIENCE AND INTEREST -->
+            <div class="exint">
+                <div class="experience">
+                    <h3>Experience <span> <a href=""><img src="images/homeImg/redpen.png" alt=""></a></span></h3>
+                    <hr>
+                    <p>Software Engineer, Tech4dev</p>
+                    <p>Research Analyst, Heacy Health</p>
+                </div>
+                <div class="interest">
+                    <h3>Interest <span> <a href=""><img src="images/homeImg/redpen.png" alt=""></a></span></h3>
+                    <hr>
+                    <button class="btn">Technology</button>
+                    <button class="btn_1">Health Science</button>
+                    <button class="btn_2">Agriculture</button>
+                    <button class="btn_3">Arts</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('a');
+        const menuLength = menuItem.length;
+        for (let i = 0; i< menuLength; i++){
+            if(menuItem[i].href === currentLocation){
+                menuItem[i].className = "active"
+            }
+        }
+    </script>
+    <!-- <script src="js/main.js"></script> -->
+
+</body>
+
+</html>

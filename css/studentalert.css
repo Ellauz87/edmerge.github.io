@@ -1,0 +1,334 @@
+/* DEFAULT STYLING */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: edmerge;
+}
+button {
+    cursor: pointer;
+    border-radius: 12px;
+}
+input {
+    outline: none;
+    border-color: inherit;
+}
+@font-face {
+    font-family: edmerge;
+    src: url('../montserrat/Montserrat-Regular.ttf');
+}
+.content {
+    padding-top: 35px;
+    margin-left: 10px;
+    border: solid pink;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+.navbar {
+    width: 26.8%;
+    height: 100vh;
+}
+.body {
+    width: 73.2%;
+}
+
+/* NAVBAR STYLING */
+.lcircle {
+    width: 550px;
+    height: 550px;
+    left: -181px;
+    top: 166.84px;
+    border-radius: 50%;
+    position: absolute;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.mcircle {
+    position: absolute;
+    width: 99px;
+    height: 98px;
+    left: 294.55px;
+    top: 455.53px;
+    border-radius: 50%;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.scircle {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    left: 404.64px;
+    top: 483.55px;
+    border-radius: 50%;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    z-index: 2;
+}
+.lcircle1 {
+    clip-path: circle(50% at 100% 73%);
+    position: absolute;
+    width: 459px;
+    height: 455px;
+    right: 0%;
+    top: 700.56px;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    z-index: -1;
+    opacity: 0.5;
+}
+.mcircle1 {
+    position: absolute;
+    width: 99px;
+    height: 98px;
+    left: 1000.22px;
+    top: 962.68px;
+    border-radius: 50%;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+
+}
+.menulink {
+    width: 216px;
+    height: 100vh;
+    background-color: #2b2d3c;
+    margin-left: 130px;
+    position: fixed;
+}
+.homedisplay {
+    width: 100%;
+}
+.logo {
+    text-align: center;
+}
+.logo img {
+    margin-top: 10px;
+}
+.menulink .up {
+    margin-top: 30px;
+    margin-bottom: 180px;
+}
+.menulink ul li {
+    list-style: none;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menulink ul li:hover {
+    background: #E6E8FA;
+    color: black;
+}
+ .menulink ul li .active {
+    background: #E6E8FA;
+    color: black;
+    padding: 20px 62px 20px 62px;
+}
+.menulink ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menulink ul li a:hover {
+    background: #E6E8FA;
+    color: black;
+}
+.up img, .down img {
+    text-align: left;
+    margin-right: 20px;
+}
+
+/* EMPTYBAR STYLE */
+.body{
+    margin-left: 30px;
+}
+.bar{
+    width: 100%;
+    height: 279px;
+    background: rgba(43, 45, 60, 0.3);
+    height: 159px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.alertIcon{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 100px;
+}
+.alertpara{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.Nbar{
+    height: 159px;
+    width: 100%;
+    background-image: url('../images/homeImg/bigbanner.png');
+}
+.flex{
+    display: flex;
+    padding-top: 20px;
+}
+
+.search_bar{
+    height: 44px;
+    width: 350px;
+    padding: 10px;
+    margin-left: 60px;
+    margin-right: 300px;
+    margin-top: 40px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.letter{
+    margin-left: 20px;
+    margin-top: 35px;
+    color: #fff;
+}
+
+.small-img{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px){
+    .container {
+        margin: 0px;
+        width: 100%;
+    }
+    .input {
+        margin-right: 0px;
+    }  .sinput {
+        margin-right: 150px;
+    }
+    
+    .pimg {
+        margin-right: 25px;
+    }
+    .bar {
+        width: auto;
+    }
+    .lcircle, .mcircle, .scircle {
+        display: none;
+    }
+    .lcircle1, .mcircle1, .scircle1 {
+        display: none;
+    }
+}
+@media (max-width: 1000px){
+    .menulink {
+        margin-left: 0px;
+    }
+      .input {
+        margin-right: 0px;
+    }
+    .search_bar {
+        width: 200px;
+        margin-right: 50px;
+    }
+    .sinput {
+        margin-right: 50px;
+    }
+    .pimg {
+        margin-right: 5px;
+    }
+    .livetech {
+        display: block;
+    }
+    .techbox {
+        width: 250px;
+        margin: auto;
+    }
+    .seem {
+        margin-top: 15px;
+        text-align: center;
+    }
+    .contbio {
+        display: block;
+    }
+    .verify {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 720px){
+    .menulink {
+        width: 100px;
+    }
+    .navtex {
+        display: none;
+    }
+    
+    .menulink ul li .active {
+        background: #E6E8FA;
+        color: black;
+        padding: 25px 30px 20px 30px;
+    
+    }
+    .lcircle, .lcircle1,
+    .mcircle, .mcircle1,
+    .scircle, .scircle1 {
+        display: none;
+    }
+  
+}
+
+
+@media(max-width:500px){
+    .Nbar {
+        width: 72vw;
+    }
+    .search_bar {
+        margin-left: 20px;
+        width: 150px;
+    }
+    .navbar {
+        width: 100%;
+    }
+    .letter {
+        margin-left: 70px;
+    }
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+    .alertpara h3 {
+        margin-top: 0px;
+        font-size: 13px;
+    }
+    .alertIcon{
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: -100px;
+    }
+    .alertIcon img {
+        width: 60%;
+        margin-bottom: 50px;
+    }
+    .flex img {
+        margin-left: -30px;
+    }
+    .flex p {
+        display: none;
+    }
+}

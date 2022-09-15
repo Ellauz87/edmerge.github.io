@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/studentalert.css">
+    <title>Alert student!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="lcircle"></div>
+        <div class="mcircle"></div>
+        <div class="scircle"></div>
+        <div class="lcircle1"></div>
+        <div class="mcircle1"></div>
+        <div class="scircle1"></div>
+
+        <!--===================== SIDE NAVBAR SECTION =====================-->
+        <div class="navbar">
+
+            <div class="menulink">
+                <div class="logo">
+                    <img src="images/logos/edm03.png" alt="">
+                </div>
+                <ul class="up">
+                    <li><a href="studentboard.html"> <img src="images/homeImg/dashbordSvg/home.svg" alt=""> <span class="navtex">
+                                Home</span></a>
+                    </li>
+                    <li><a href="studentprofile.html"> <img src="images/homeImg/dashbordSvg/profile.svg" alt=""> <span
+                                class="navtex">
+                                Profile</span></a></li>
+                    <li><a href="studentalert.html"> <img src="images/homeImg/dashbordSvg/alerticon.svg" alt=""> <span
+                                class="navtex">
+                                Alerts</span></a></li>
+                    <li><a href="studentactivity.html"> <img src="images/homeImg/dashbordSvg/Iconactivty.svg" alt=""> <span
+                                class="navtex">Activity</span></a></li>
+                </ul>
+                <ul class="down">
+                    <li><a href="settings.html"><img src="images/homeImg/dashbordSvg/settings.svg" alt=""> <span class="navtex">
+                                Settings</span></a></li>
+                    <li><a href="index.html"> <img src="images/homeImg/dashbordSvg/logout.svg" alt=""> <span class="navtex"> Log
+                                out</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--====================== ALERT IMG AND BAR =====================-->
+        <div class="body">
+            <div class="bar">
+                <div class="Nbar">
+                    <!-- <div class="faint"> -->
+                        <div class="flex">
+                            <input type="search" placeholder="Search" class="search_bar">
+                            <div class="flex">
+                                <img src="images/homeImg/chiamaka.png" alt="" class="small-img">
+                                <p class="letter">Chiamaka</p>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                </div>
+
+            </div>
+            <div class="alertIcon">
+                <img src="images/ion_notifications-off.png" alt="">
+            </div>
+            <div class="alertpara">
+                <h3>You currently have no notifications</h3>
+            </div>
+        </div>
+        <script>
+            const currentLocation = location.href;
+            const menuItem = document.querySelectorAll('a');
+            const menuLength = menuItem.length;
+            for (let i = 0; i < menuLength; i++) {
+                if (menuItem[i].href === currentLocation) {
+                    menuItem[i].className = "active"
+                }
+            }
+        </script>
+</body>
+
+</html>

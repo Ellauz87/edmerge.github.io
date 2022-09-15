@@ -1,0 +1,564 @@
+/* DEFAULT STYLING */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: edmerge;
+}
+button {
+    cursor: pointer;
+    border-radius: 12px;
+}
+input {
+    outline: none;
+    border-color: inherit;
+}
+@font-face {
+    font-family: edmerge;
+    src: url('../montserrat/Montserrat-Regular.ttf');
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+.navbar {
+    width: 26.8%;
+}
+.content {
+    margin-left: 30px;
+    width: 73.2%;
+}
+
+
+/* NAVBAR STYLING */
+.lcircle {
+    width: 550px;
+    height: 550px;
+    left: -181px;
+    top: 166.84px;
+    border-radius: 50%;
+    position: absolute;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.mcircle {
+    position: absolute;
+    width: 99px;
+    height: 98px;
+    left: 294.55px;
+    top: 455.53px;
+    border-radius: 50%;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.scircle {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    left: 404.64px;
+    top: 483.55px;
+    border-radius: 50%;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    z-index: 2;
+}
+.lcircle1 {
+    clip-path: circle(46.6% at 98% 51%);
+    position: absolute;
+    width: 459px;
+    height: 455px;
+    right: 0%;
+    /* left: 814.02px; */
+    top: 1000.56px;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    z-index: -1;
+    opacity: 0.5;
+    z-index: -1;
+}
+.mcircle1 {
+    position: absolute;
+    width: 99px;
+    height: 98px;
+    left: 1000.22px;
+    top: 1262.68px;
+    border-radius: 50%;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    z-index: -1;
+
+}
+.scircle1 {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    left: 950.43px;
+    top: 1274.82px;
+    border-radius: 50%;
+    background: rgba(43, 45, 60, 0.6);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    z-index: -1;
+}
+.menulink {
+    width: 216px;
+    height: 100vh;
+    background-color: #2b2d3c;
+    margin-left: 130px;
+    position: fixed;
+}
+.homedisplay {
+    width: 100%;
+}
+.logo {
+    text-align: center;
+}
+.logo img {
+    margin-top: 10px;
+}
+.menulink .up {
+    margin-top: 30px;
+    margin-bottom: 180px;
+}
+.menulink ul li {
+    list-style: none;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menulink ul li:hover {
+    background: #E6E8FA;
+    color: black;
+}
+ .menulink ul li .active {
+    background: #E6E8FA;
+    color: black;
+    padding: 20px 61px 20px 61px;
+}
+.menulink ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menulink ul li a:hover {
+    background: #E6E8FA;
+    color: black;
+}
+.up img, .down img {
+    text-align: left;
+    margin-right: 20px;
+}
+/* TOP NAV STYLING */
+.topnav {
+    display: flex;
+    width: 100%;
+    height: 160px;
+    background: url('../images/homeImg/bigbanner.png');
+    margin-top: 0px;
+}
+/* .topnavcover {
+    width: 910px;
+    height: 160px;
+    background-color: #2b2d3c;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+} */
+.userfield {
+    margin: auto;
+    margin-left: 100px;
+    width: 720px;
+}
+.input {
+    width: 340px;
+    height: 44px;
+    border-radius: 12px;
+    border-right: none;
+    background: #E6E8FA;
+    color: white;
+    padding: 11px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: none;
+    margin-right: 230px;
+    margin-top: 53px;
+    z-index: 2;
+}
+.sinput {
+    width: 35px;
+    margin-top: 53px;
+    margin-left: 70px;
+    border-left: none;
+    border-radius: 12px;
+    background: #E6E8FA;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    outline: none;
+    border: none;
+    height: 44px;
+    z-index: 2;
+}
+.sinput:hover{
+    cursor: pointer;
+}
+.pimg {
+    width: 42px;
+    height: 42px;
+    background-color: #E6E8FA;
+    border-radius: 50%;
+    margin-right: 22px;
+    margin-top: 53px;
+    z-index: 2;
+}
+.topnav h3 {
+    padding-top: 60px;
+    color: #E6E8FA;
+    z-index: 2;
+}
+
+/* USER FILED STYLING */
+.homeface {
+    margin: auto;
+}
+.homeface h3 {
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+/* HOME TECHNOLOGY */
+.hometech, .art {
+    margin: auto;
+}
+.hometech h3, .art h3 {
+    font-size: 24px;
+    padding-top: 70px;
+    padding-bottom: 5px;
+}
+.hometech hr {
+    width: 45px;
+    margin-left: 50px;
+    margin-bottom: 45px;
+}
+.art hr {
+    width: 45px;
+    margin-left: 5px;
+    margin-bottom: 45px;
+}
+.livetech {
+    display: flex;
+}
+.techbox {
+    width: 153.7px;
+    height: 227px;
+    background-color: #e6e8fa;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    margin: 16px;
+    margin-left: 0px;
+}
+.liveimg {
+    width: 81px;
+    height: 89px;
+}
+.livetext {
+    text-align: center;
+}
+.livetext p, .livetext1 p {
+    padding-top: 30px;
+    padding-left: 10px;
+    text-align: left;
+    color: #2B2D3C;
+    font-size: 14px;
+    line-height: 24.07px;
+}
+.livetext1 p {
+    font-size: 12px;
+}
+.livetext button, .livetext1 button {
+    background-color: #2B2D3C;
+    color: #E6E8FA;
+    width: 94px;
+    height: 34px;
+    position: relative;
+    border-radius: 5px;
+    top: 20px;
+    outline: none;
+    border: none;
+}
+.livetext1 button {
+    left: 30px;
+}
+.seem {
+    margin-top: 20px;
+}
+.seem a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+.space {
+    margin-bottom: 150px;
+}
+
+/*======================= FOOTER STYLING ======================*/
+.footer {
+    width: 75%;
+    height: 170px;
+    margin-left: 216px;
+    background: #2B2D3C;
+}
+.footernav {
+    display: flex;
+    height: 65px;
+    margin-bottom: 34px;
+}
+.footerlogo {
+    margin-top: 15px;
+    margin-left: 137px;
+    margin-right: 100px;
+    width: 100px;
+}
+.footertext ul {
+    margin-top: 30px;
+    width: 900px;
+}
+.footertext ul li {
+    display: inline-block;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #E6E8FA;
+}
+.footertext ul li a {
+    text-decoration: none;
+    color: #E6E8FA;
+}
+.footertext ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+.footersnav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.social {
+    width: 200px;
+    height: 60px;
+    margin-left: 480px;
+}
+.social svg {
+    margin: auto;
+    margin-left: 17px;
+    margin-top: 12px;
+}
+.socialtext p {
+    color: #E6E8FA;
+    padding-top: 20px;
+    margin-right: 150px;
+}
+
+
+
+/* RESPONSIVE STYLING */
+@media (max-width: 1200px){
+    .container {
+        margin: 0px;
+        width: 100%;
+    }
+    .input {
+        margin-right: 150px;
+    }  .sinput {
+        margin-right: 0px;
+        margin-left: 50px;
+    }
+    .userfield {
+        margin: 0px;
+    }
+    .menulink {
+        margin-left: 100px;
+    }
+    
+    .pimg {
+        margin-right: 25px;
+    }
+    .lcircle, .lcircle1,
+    .mcircle, .mcircle1,
+    .scircle, .scircle1 {
+        display: none;
+    }
+}
+@media (max-width: 1100px){
+      .input {
+        margin-right: 50px;
+    }
+    .sinput {
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+    .pimg {
+        margin-right: 5px;
+    }
+    .livetech {
+        display: block;
+    }
+    .userfield {
+        width: 600px;
+    }
+    .techbox {
+        width: 250px;
+        margin: auto;
+    }
+    .seem {
+        margin-top: 15px;
+        text-align: center;
+    }
+    .content {
+        margin-left: 330px;
+        width: 580px;
+        /* width: 100vw; */
+    }
+    .userfield {
+        width: 500px;
+    }
+    .lcircle {
+        display: none;
+    }
+    .scircle, .mcircle {
+        z-index: -1;
+    }
+    .techbox {
+        margin-bottom: 20px;
+    }
+    .liveimg img {
+        width: 250px;
+        height: 89px;
+    }
+}
+@media (max-width: 920px){
+    .content {
+        margin-left: 120px;
+    }
+    .menulink {
+        margin-left: 0px;
+    }
+    .input {
+        width: 200px;
+        margin-right: 10px;
+    }
+    .sinput {
+        margin-right: 0px;
+    }
+    .menulink {
+        width: 100px;
+    }
+    .linkbtn {
+        width: 100px;
+    }
+    .navtex {
+        display: none;
+    }
+    .hometech{
+        margin: auto;
+        width: 100%;
+        margin: 0px;
+    }
+    .techbox {
+        margin-bottom: 20px;
+    }
+    .liveimg img {
+        width: 250px;
+        height: 89px;
+    }
+    .menulink ul li .active {
+        background: #E6E8FA;
+        color: black;
+        padding: 25px 30px 20px 30px;
+    
+    }
+
+        /* FOOTER MOBILE RESPONSIVE */
+        .footer {
+            background-color: #2b2d3c;
+            height: auto;
+    
+        }
+        .footernav {
+            display: block;
+            height: auto;
+        }
+        .footertext ul li {
+            display: block;
+            text-align: center;
+        }
+        .footerlogo {
+            margin-top: 15px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin: auto;
+        }
+        .footertext ul {
+            width: 200px;
+            margin: auto;
+        }
+        .social {
+            margin: auto;
+            margin-left: 0px;
+        }
+        .socialtext p {
+            color: #E6E8FA;
+            padding-top: 20px;
+            margin-right: 0px;
+            margin: auto;
+        }
+        .lcircle, .lcircle1,
+        .mcircle, .mcircle1,
+        .scircle, .scircle1 {
+            display: none;
+        }
+
+  
+}
+@media(max-width: 550px){
+    .topnav {
+        width: 70vw;
+    }
+    .seem {
+        float: left;
+    }
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+    .liveimg img {
+        width: 46%;
+    }
+    .techbox {
+        width: 46%;
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+    .techbox img {
+        width: 230px;
+    }
+    .homeface h3 {
+        font-size: 16px;
+    }
+    .homeface p {
+        font-size: 11.5px;
+    }
+    .topnav h3 {
+        display: none;
+    }
+    .input {
+        width: 120px;
+    }
+}
